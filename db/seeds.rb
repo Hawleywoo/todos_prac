@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Todo.destroy_all
-User.create(username: 'andrew', email: 'something@gmail.com', password: 'password')
-Todo.create(name: 'Andrew', description: 'hello', finished: false, user_id: 1)
+andrew = User.create(username: 'andrew', email: 'something@gmail.com', password: 'password')
+Todo.create(name: 'Andrew', description: 'hello', finished: false, user: andrew)
